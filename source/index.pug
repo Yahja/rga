@@ -5,7 +5,23 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
     // Bootstrap CSS
-    link(rel='stylesheet', href='css/styles.css', integrity='sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm', crossorigin='anonymous')
+    link(rel='stylesheet', href='css/styles.css')
     title Basic Template
   body
-    h1 Browsersync works !!!
+    .container-fuid
+        .row.m-0
+            .col-1.offset-lg-1.position-absolute.logo-top
+                img.img-fluid(src='images/logo-falabella.jpg')
+            .col.p-0
+                img.img-fluid(src='images/HH1-color-040219-JP-2x.jpg')
+        .row.justify-content-center.m-0
+            .col 
+                img.img-fluid.img-colors(src='images/color-010319-naranjo.jpg')
+            .col
+                img.img-fluid.img-colors(src='images/color-010319-morado.jpg')
+            .col
+                img.img-fluid.img-colors(src='images/color-010319-rosado.jpg')
+            .col
+                img.img-fluid.img-colors(src='images/color-010319-amarillo.jpg')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js')
+    script(src='js/app.min.js')

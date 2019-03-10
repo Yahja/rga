@@ -1,0 +1,17 @@
+/* Font */
+@import 'node_modules/bootstrap/scss/bootstrap';
+/* Colors */
+$white: #FFFFFF;
+$verde-prim: #8fca00;
+
+body{
+    background-color: $white;
+    .logo-top{
+        z-index: 1;
+    }
+    .img-colors{
+        top: 0px;
+        position: relative;
+        opacity: 0.0;
+    }
+}

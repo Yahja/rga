@@ -1,0 +1,1 @@
+TweenMax.staggerTo('.img-colors', 1, {opacity:1, y:50, delay:0.5}, 0.2);
