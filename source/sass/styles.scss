@@ -1,11 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
 /* Font */
 @import 'node_modules/bootstrap/scss/bootstrap';
 /* Colors */
 $white: #FFFFFF;
 $verde-prim: #8fca00;
+$gris: #313131;
+$naranjo: #ef804a;
+$morado: #bcb3de;
+$rosado: #ff80a2;
+$amarillo: #ffc400;
 
+html{
+    scroll-behavior: smooth;
+}
 body{
     background-color: $white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 100;
     .logo-top{
         z-index: 1;
     }
@@ -13,5 +24,68 @@ body{
         top: 0px;
         position: relative;
         opacity: 0.0;
+        margin-bottom: 50px;
+    }
+    .firma{
+        opacity: 0;
+    }
+    h1, h2{
+        text-align: center;
+        color: $gris;
+    }
+    ul.menu-colores{
+        list-style: none;
+        margin-top: 20px;
+        opacity: 0;
+        overflow: hidden;
+        li{
+            text-align: center;
+            letter-spacing: 1px;
+            padding: 0px;
+            color: $white;
+            a{
+                width: 100%;
+                display: block;
+                padding: 10px;
+                cursor: pointer;
+                z-index: 8;
+            }
+            &.naranjo{
+                transition: all 0.2s ease-in-out;
+                height: 44px;
+                background-color: $naranjo;
+                &:hover{
+                    transform: scale(1.1);
+                    z-index: 9;
+                }
+            }
+            &.morado{
+                transition: all 0.2s ease-in-out;
+                height: 44px;
+                background-color: $morado;
+                &:hover{
+                    transform: scale(1.1);
+                    z-index: 9;
+                }
+            }
+            &.rosado{
+                transition: all 0.2s ease-in-out;
+                height: 44px;
+                background-color: $rosado;
+                &:hover{
+                    transform: scale(1.1);
+                    z-index: 9;
+                }
+            }
+            &.amarillo{
+                transition: all 0.2s ease-in-out;
+                height: 44px;
+                background-color: $amarillo;
+                &:hover{
+                    transform: scale(1.1);
+                    z-index: 9;
+                }
+            }
+        }
     }
 }

@@ -10,7 +10,7 @@ var browserSync = require('browser-sync').create();
 
 gulp.task('html', function () {
   return gulp.src('source/*.pug')
-    .pipe(pug())
+    .pipe(pug({ pretty: true}))
     .pipe(gulp.dest('build/'))
 });
 
